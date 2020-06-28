@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/reset.css">
+<div id="logreg-forms">
+    <!-- Reset Password view -->
+        <form action="/users/reset-password" method="POST" class="form-signup">
+           
+              <div class="social-login">
+                <a href="/users/auth/google"><button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button></a>
+            </div>
+
+            <p style="text-align:center; color:lightgrey">OR</p>
+
+            <input type="password" name="old_password" class="form-control" placeholder="Old Password" required autofocus="">
+            <input type="password" name="new_password" class="form-control" placeholder="Password" required autofocus="">
+            <input type="password" name="confirm_new_password" class="form-control" placeholder="Confirm Password" required autofocus="">
+            <!-- <div class="g-recaptcha" data-sitekey="6LfNSqoZAAAAAJchy0PColHuyMpkhPDwxFh2FwqF"></div> -->
+            <div class="input-group">
+            <button class="btn btn-md btn-block submit" type="submit"><i class="fas fa-user-plus"></i> Reset</button>
+            </div>
+
+            <a href="/users/profile" id="cancel_signup"><i class="fa fa-angle-left"></i> Back</a>
+        </form>
+        <br>
+
+</div>
+
+
+

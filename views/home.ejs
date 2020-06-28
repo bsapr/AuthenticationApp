@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="logreg-forms">
+
+  <!-- Form for sign in page -->
+    <form action="/users/create-session" method="POST" class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center; color:lightgrey;"> Sign in</h1>
+        <div id="googlelogin" class="social-login">
+            <!-- <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button> -->
+          <div>   <a href="/users/auth/google"><button class="btn google-btn social-btn" type="button" style="margin-left: 25%;" ><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button></a></div>
+        </div>
+        <p style="text-align:center; color:lightgrey"> OR  </p>
+        <div class="input-group">
+          <input type="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="">
+        </div>
+
+        <div class="input-group">
+          <input type="password" name="password" class="form-control" placeholder="Password" required="">
+        </div>
+
+        <!-- <div class="g-recaptcha" data-sitekey="6LfNSqoZAAAAAJchy0PColHuyMpkhPDwxFh2FwqF" style="transform:scale(0.50);-webkit-transform:scale(0.50);transform-origin:0 0;-webkit-transform-origin:0 0;"></div> -->
+        <div class="g-recaptcha"  data-size="normal" data-sitekey="6LfNSqoZAAAAAJchy0PColHuyMpkhPDwxFh2FwqF"></div>
+        
+
+        <div class="input-group">
+          <button class="btn btn-md btn-rounded btn-block form-control submit" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+        </div>
+
+        <a href="#" id="forgot_pswd">Forgot password?</a>
+        <hr>
+        <!-- <p>Don't have an account!</p>  -->
+        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+        </form>
+<!-- Form for forget page -->
+        <form action="/users/forget-password"  method="POST" class="form-reset">
+            <input type="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="">
+            <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+            <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+        </form>
+<!-- Form for sign up page -->
+        <form action="/users/create" method="POST" class="form-signup">
+           
+              <div class="social-login">
+                <a href="/users/auth/google"><button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button></a>
+            </div>
+
+            <p style="text-align:center; color:lightgrey">OR</p>
+
+            <input type="text" name="name" class="form-control" placeholder="Full name" required="" autofocus="">
+            <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus="">
+            <input type="password" name="password" class="form-control" placeholder="Password" required autofocus="">
+            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required autofocus="">
+            <div class="g-recaptcha" data-sitekey="6LfNSqoZAAAAAJchy0PColHuyMpkhPDwxFh2FwqF"></div>
+<div class="input-group">
+<button class="btn btn-md btn-block submit" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+</div>
+
+            <a href="#" id="cancel_signup"><i class="fa fa-angle-left"></i> Back</a>
+        </form>
+        <br>
+
+</div>
+
+<script src="/js/home.js" ></script>

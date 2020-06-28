@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  /* text-align: center; */
+  width: 100%;
+  height: auto;
+  background: url(https://wallpaperboat.com/wp-content/uploads/2019/09/beautiful-night-sky-photo.jpg);
+  background-size: cover; }
+  body #layout-main {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0), 0 12px 40px rgba(0, 0, 0, 0);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%; }
