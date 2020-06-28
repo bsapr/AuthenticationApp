@@ -1,8 +1,8 @@
-ToDo APP
-ToDo App bulilt in NodeJS and Express
+Authentication APP
+Authentication App bulilt in NodeJS and Express
 
 OverView
-This small project help me understanding the working structure of a full scalable porject, and understanding the folder structure of the big projects.
+This project helped me understanding the authentication process including social authentication.
 
 Bonus Features & Implementation details :-
 GoogleCaptcha for integrating captcha during sign in/sign up
@@ -30,16 +30,17 @@ Folder Structure
     |__ProjectDir
         |__assets
         |   |__css
-        |      |__ style.css
-        |   |__ 
-        |   |__  
-        |   |__  
+        |      |__ layout.css
+        |      |__ footer.css
+        |      |__ home.css
+        |      |__ header.css 
         |__config
         |   |__ mongooese.js
-        |   |__  
-        |   |__  
-        |   |__  
-        |   |__  
+        |   |__ kue.js 
+        |   |__ nodemailer.js
+        |   |__ passport-local-strategy.js    
+        |   |__ passport-google-oauth2-strategy.js
+        |   |__ middleware.js 
         |__controllers
         |   |__ home_controller.js
         |   |__ users_controller  
@@ -51,10 +52,14 @@ Folder Structure
         |
         |__views
         |   |__home.ejs
-        |   |__  
-        |   |__  
-        |   |__  
-        |   |__  
+        |   |__layout.ejs  
+        |   |__ reset.ejs 
+        |   |__ header.ejs 
+        |   |__  footer.ejs
+        |__ mailers
+            |__forgetPassword_mailer.js
+        |__ workers
+            |__forgetPassword_email_worker.js    
         |__ .gitignore
         |__ index.js
         |__ package-lock.json
