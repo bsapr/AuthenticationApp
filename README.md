@@ -4,6 +4,12 @@ Authentication App bulilt in NodeJS and Express
 OverView
 This project helped me understanding the authentication process including social authentication.
 
+Important point to run this app in your system :-
+
+In nodemailer.js config file, please add your gmail credentials.
+One more thing - As googla captcha doesn't support localhost domain so run this app using following url :- 
+http://127.0.0.1:8000/
+
 Bonus Features & Implementation details :-
 GoogleCaptcha for integrating captcha during sign in/sign up
 Reset password feature
